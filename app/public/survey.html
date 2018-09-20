@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" <!-- link to Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -19,7 +19,7 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Full Name</label>
+                        <label for="textarea1" id="name">Full Name</label>
                     </div>
                 </div>
             </form>
@@ -31,102 +31,120 @@
                 <div class="row">
                     <div class="input-field col s12">
                         <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Image</label>
+                        <label for="textarea1" id="image">Image</label>
                     </div>
                 </div>
             </form>
         </div>
         <div class "row">
             <p class="q1"></p>
-            <div class="input-field col s6">
-                    <select multiple>
-                      <option value="" disabled selected>Choose your option</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
-                    <label>Materialize Multiple Select</label>
-                  </div>
-        </div>
-        <div class "row">
-            <p class="q2"></p>
-            <label>Browser Select</label>
+            <label class="questionOne">Browser Select</label>
             <select class="browser-default">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label>Materialize Multiple Select</label>
+        </div>
+    
+        <div class "row">
+            <p class="q2"></p>
+            <label class="questionTwo">Browser Select</label>
+            <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
         <div class "row">
             <p class="q3"></p>
-            <label>Browser Select</label>
+            <label class="questionThree">Browser Select</label>
             <select class="browser-default">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
         <div class "row">
-            <p class="q4"></p>
+            <p></p>
             <label>Browser Select</label>
-            <select class="browser-default">
+            <select class="browser-default q4">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
         <div class "row">
-            <p class="q5"></p>
-            <label>Browser Select</label>
-            <select class="browser-default">
+            <p></p>
+            <label class="questionFive">Browser Select</label>
+            <select class="browser-default q5">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
 
         </div>
         <div class "row">
-            <p class="q6"></p>
-            <label>Browser Select</label>
-            <select class="browser-default">
+            <p></p>
+            <label class="questionSix">Browser Select</label>
+            <select class="browser-default q6">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
         <div class "row">
-            <p class="q7"></p>
-            <label>Browser Select</label>
-            <select class="browser-default">
+            <p></p>
+            <label class="questionSeven">Browser Select</label>
+            <select class="browser-default q7">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
         <div class "row">
-            <p class="q8"></p>
-            <label>Browser Select</label>
-            <select class="browser-default">
+            <p></p>
+            <label class="questionEight">Browser Select</label>
+            <select class="browser-default q8">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
         <div class "row">
             <p class="q9"></p>
             <label>Browser Select</label>
-            <select class="browser-default">
+            <select class="browser-default questionNine">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
         <div class "row">
@@ -134,13 +152,24 @@
             <label>Browser Select</label>
             <select class="browser-default">
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
         </div>
 
+        <button class="btn waves-effect waves-light submitBtn" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="../assets/survey.js"></script>
 
 </body>
 
