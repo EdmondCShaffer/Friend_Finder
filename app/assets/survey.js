@@ -7,10 +7,11 @@ $(".submitBtn").on("click", function (event) {
     if ($("#name").val() === "" || $("image").val() === "") {
         validate = false;
 
-    } else if ($(".q1").val() === "empty" || $(".q2").val() === "empty" || $(".q3").val() === "empty" || $(".q4").val() === "empty" || $(".q5").val() === "empty" || $(".q6").val() === "empty" || $(".q7").val() === "empty" || $(".q8").val() === "empty" || $(".q9").val() === "empty" || $(".q10").val() === "empty") {
+    }if ($(".q1").val() === "empty" || $(".q2").val() === "empty" || $(".q3").val() === "empty" || $(".q4").val() === "empty" || $(".q5").val() === "empty" || $(".q6").val() === "empty" || $(".q7").val() === "empty" || $(".q8").val() === "empty" || $(".q9").val() === "empty" || $(".q10").val() === "empty") {
         valid = false;
+        alert("Please answer all of the questions to find the best match");
    
-    } if (validate === true) {
+    } else {
 
         var findFriend = {
             name: $("#name").val().trim(),
@@ -28,14 +29,15 @@ $(".submitBtn").on("click", function (event) {
                 $(".q10").val()
             ]
         }
-    };
+        console.log(findFriend);
 
-    console.log(findFriend);
-    //grab form options and store it in var
-    // var newfrienddata={
-    //     name: $("#name").val(),
-    //     photo: $("#photo").val(),
-    //     scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
-    // }
-    //to ajax post request and send data
+        var URL = window.location.origin;
+     
+        $.post(URL + "/api/friends", findFriend, function(data) {
+         $(".friendName").text(data.name);
+         $(".friendImage").attr("src", data.image);
+        });
+     
+    };
+ 
 });
