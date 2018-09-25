@@ -7,7 +7,7 @@ module.exports = function(app){
     });
     
     app.post("/api/friends", function(req, res){
-        
+        console.log("this is from the post route");
         var friendInput = req.body;
         
         var response = friendInput.scores;
@@ -41,6 +41,7 @@ module.exports = function(app){
         });
 
         friends.push(friendInput);
+        
 
     })
 

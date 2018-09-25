@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" <!-- link to Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
     <title>Document</title>
 </head>
 
@@ -163,7 +163,7 @@
         <div class="row">
             <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1 submit btn-large">Submit</button>
         </div>
-    </div>>
+    </div>
 
     </div>
     <!-- Modal Structure -->
@@ -184,6 +184,7 @@
     </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
@@ -195,14 +196,14 @@
 
             var validate = true;
 
-            if ($("#name").val() === "" || $("image").val() === "") {
+            if ($("#name").val() === "" || $("#image").val() === "") {
                 validate = false;
 
-            } else if ($(".q1").val() === "empty" || $(".q2").val() === "empty" || $(".q3").val() === "empty" || $(".q4").val() === "empty" || $(".q5").val() === "empty" || $(".q6").val() === "empty" || $(".q7").val() === "empty" || $(".q8").val() === "empty" || $(".q9").val() === "empty" || $(".q10").val() === "empty") {
+            } else if ($(".q1").val() === "" || $(".q2").val() === "" || $(".q3").val() === "" || $(".q4").val() === "" || $(".q5").val() === "" || $(".q6").val() === "" || $(".q7").val() === "" || $(".q8").val() === "" || $(".q9").val() === "" || $(".q10").val() === "") {
                 validate = false;
                 alert("Please answer all of the questions to find the best match");
 
-            } else {
+            } if (validate === true){
 
                 var findFriend = {
                     name: $("#name").val().trim(),
@@ -221,14 +222,17 @@
                     ]
                 }
                 console.log(findFriend);
+                console.log("we got here");
 
-                var URL = window.location.origin;
+                // var URL = window.location.origin;
 
-                $.post(URL + "/api/friends", findFriend, function (data) {
+                $.post("/api/friends", findFriend, function (data) {
                     $(".friendName").text(data.name);
                     $(".friendImage").attr("src", data.image);
-                 
-                    $('.modal').append($(".friendName"),$(".friendImage"));
+
+                    $(".modal-content").empty();
+                    $('.modal-content').append($(".friendName")).append($(".friendImage"));
+                
                 });
 
             };
