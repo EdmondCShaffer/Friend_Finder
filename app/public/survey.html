@@ -194,10 +194,11 @@
 
             var validate = true;
 
-            if ($("#name").val() === "" || $("#image").val() === "") {
+            if ($("#name").val() === null|| $("#image").val() === null) {
                 validate = false;
+                alert("Name and Image are Required");
 
-            } else if ($(".q1").val() === "" || $(".q2").val() === "" || $(".q3").val() === "" || $(".q4").val() === "" || $(".q5").val() === "" || $(".q6").val() === "" || $(".q7").val() === "" || $(".q8").val() === "" || $(".q9").val() === "" || $(".q10").val() === "") {
+            } else if ($(".q1").val() === null || $(".q2").val() === null || $(".q3").val() === null || $(".q4").val() === null || $(".q5").val() === null || $(".q6").val() === null || $(".q7").val() === null || $(".q8").val() === null || $(".q9").val() === null || $(".q10").val() === null) {
                 validate = false;
                 alert("Please answer all of the questions to find the best match");
 
@@ -228,8 +229,8 @@
                 $.post("/api/friends", findFriend, function (data) {
                     $(".friendName").text(data.name);
                     $(".friendImage").attr("src", data.image);
-
-                    $(".modal-content").empty();
+                    console.log(data.name);
+                    // $(".modal-content").empty();
                     $('.modal-content').append($(".friendName")).append($(".friendImage"));
                 
                 });
