@@ -1,6 +1,6 @@
 var friends = [{
     name:"Miley Cirus",
-    photo:"http://cdn.akc.org/content/article-body-image/funny-basset_hound_yawning.jpg",
+    image:"http://cdn.akc.org/content/article-body-image/funny-basset_hound_yawning.jpg",
     scores:[
         '5',
         '1',
@@ -15,7 +15,7 @@ var friends = [{
       ]
   },{
     name: 'Brad Pitt ',
-		photo: 'http://brewminer.com/photos/1441184974_91cfb179ce_m.png',
+		image: 'https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fpeopledotcom.files.wordpress.com%2F2017%2F04%2Fbrad-pitt-1.jpg%3Fw%3D450&w=700&q=85',
 		scores: [
 			'2',
 			'4',
@@ -31,7 +31,7 @@ var friends = [{
   },
   {
     name: "Monica Geller",
-    photo: "https://media.giphy.com/media/beYVvBUHy1Gla/giphy.gif",
+    image: "https://media.giphy.com/media/beYVvBUHy1Gla/giphy.gif",
     scores: [
       "3",
       "3",
@@ -47,7 +47,7 @@ var friends = [{
   },
   {
     name:"Donald",
-    photo:"https://i.pinimg.com/originals/d4/c2/00/d4c200c9ed401c0fb445b0f56d2b09a7.jpg",
+    image:"https://i.pinimg.com/originals/d4/c2/00/d4c200c9ed401c0fb445b0f56d2b09a7.jpg",
     scores:[
         '3',
         '1',
@@ -62,7 +62,7 @@ var friends = [{
       ]
   },{
     name:"Tom Cruise",
-    photo:"https://i.pinimg.com/originals/d4/c2/00/d4c200c9ed401c0fb445b0f56d2b09a7.jpg",
+    image:"https://i.pinimg.com/originals/d4/c2/00/d4c200c9ed401c0fb445b0f56d2b09a7.jpg",
     scores:[
         '3',
         '1',

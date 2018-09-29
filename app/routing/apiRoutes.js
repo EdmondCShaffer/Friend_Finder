@@ -9,9 +9,9 @@ module.exports = function(app){
     app.post("/api/friends", function(req, res){
         console.log("this is from the post route");
         var friendInput = req.body;
-        
+        console.log(friendInput)
         var response = friendInput.scores;
-
+console.log(response)
         var friendName = "";
         
         var friendImage = "";
@@ -24,15 +24,16 @@ module.exports = function(app){
             
             for(var j = 0; j < response.length; j++){
                 
-                different += Math.abs(friends[i].scores[j] - responses[j]);
+                different += Math.abs(friends[i].scores[j] - response[j]);
             } 
             if (different < difference) {
                 
                 difference = different;
                 
                 friendName = friends[i].name;
-                
+                console.log(friendName)
                 friendImage = friends[i].image;
+                console.log(friendImage)
 			}
         }
         res.json({
