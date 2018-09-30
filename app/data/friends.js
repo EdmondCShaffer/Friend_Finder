@@ -1,6 +1,6 @@
 var friends = [{
     name:"Miley Cirus",
-    image:"http://cdn.akc.org/content/article-body-image/funny-basset_hound_yawning.jpg",
+    image:"https://i.ytimg.com/vi/10dqgKqKxp8/hqdefault.jpg",
     scores:[
         '5',
         '1',
@@ -15,7 +15,7 @@ var friends = [{
       ]
   },{
     name: 'Brad Pitt ',
-		image: 'https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fpeopledotcom.files.wordpress.com%2F2017%2F04%2Fbrad-pitt-1.jpg%3Fw%3D450&w=700&q=85',
+		image: 'http://cdn.akc.org/content/hero/funny_dog_pictures_header.jpg',
 		scores: [
 			'2',
 			'4',
@@ -31,7 +31,7 @@ var friends = [{
   },
   {
     name: "Monica Geller",
-    image: "https://media.giphy.com/media/beYVvBUHy1Gla/giphy.gif",
+    image: "https://cdn8.littlethings.com/app/uploads/2017/05/funny-dog-names-five-600x600.jpg",
     scores: [
       "3",
       "3",
@@ -47,7 +47,7 @@ var friends = [{
   },
   {
     name:"Donald",
-    image:"https://i.pinimg.com/originals/d4/c2/00/d4c200c9ed401c0fb445b0f56d2b09a7.jpg",
+    image:"http://cdn.akc.org/content/article-body-image/funny-basset_hound_yawning.jpg",
     scores:[
         '3',
         '1',
@@ -62,7 +62,7 @@ var friends = [{
       ]
   },{
     name:"Tom Cruise",
-    image:"https://i.pinimg.com/originals/d4/c2/00/d4c200c9ed401c0fb445b0f56d2b09a7.jpg",
+    image:"https://i.ytimg.com/vi/XxpxXdDB1VU/hqdefault.jpg",
     scores:[
         '3',
         '1',
